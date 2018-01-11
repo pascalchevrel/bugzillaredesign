@@ -1,0 +1,235 @@
+body {
+    background: white;
+    background-image: none;
+}
+.module-header,
+.module-content,
+.change-set {
+    box-shadow: none;
+}
+.change-set .comment,
+.change-set .change {
+    padding-bottom: 0;
+}
+.comment-text {
+    margin: 0;
+}
+.change-head {
+    background-color: #f6f8fa;
+}
+.change-set {
+    color: #6a737d;
+    border: 1px solid #d1d5da;
+}
+div#message {
+    display: none
+}
+#field-status_summary {
+    color: #666;
+}
+#field-status_summary b {
+    color: white;
+    background-color: #2cbe4e;
+    display: inline-block;
+    padding: 2px 1em;
+    border-radius: 2px;
+}
+.change-gravatar {
+    display: inline-block;
+    margin-left: -64px;
+    padding-left: 0 !important;
+}
+.gravatar {
+    width: 44px;
+	height: 44px;
+    border-radius: 3px;
+}
+
+.change-head {
+    padding-left: 10px;
+}
+.change-set {
+    position: relative;
+    border-radius: 3px;
+    margin-top: 1.5em;
+}
+.change-set::before {
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    left: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    content: " ";
+    border-color: transparent;
+    border-style: solid solid outset;
+    border-width: 8px;
+    border-right-color: #e6ebf1;
+}
+.comment-tags {
+    padding: 4px 0 !important;
+}
+.comment-tag {
+    border: 1px solid #d1d5da;
+    padding: 2px 6px 2px 4px;
+    margin-right: 2px;
+    border-radius: 4px;
+    background-color: #F1F8FF;
+    color: #6a737d;
+}
+.comment-text {
+    font-size: 14px;
+    font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    padding: 1em;
+    line-height: 1.3em;
+    color: #24292e;
+}
+.comment-text span.quote,
+.comment-text span.quote_wrapped {
+    background-color: white !important;
+    color: #6a737d !important;
+    position: relative;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    width: calc(100% - 2em) !important;
+    padding-left: 0.7em !important;
+}
+.comment-text span.quote::before {
+    content: "";
+    width: 1em;
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 0.25em solid #dfe2e5;
+}
+.discussion-timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 79px;
+    z-index: -1;
+    display: block;
+    width: 2px;
+    content: "";
+    background-color: #e6ebf1;
+}
+#field-value-short_desc {
+    font-size: 24px;
+    font-weight: normal;
+}
+#field-status_summary {
+    border-top: none;
+}
+#summary-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.module-content {
+    display: flex;
+}
+button,
+button.minor {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-size: 110% 110%;
+    border-radius: 0.25em;
+    -moz-appearance: none;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    color: #24292e;
+    text-shadow: none;
+    box-shadow: none;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+button:hover,
+button.minor:hover {
+    box-shadow: none;
+    transition: none;
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    background-position: 0 -0.5em;
+    border-color: rgba(27, 31, 35, 0.35);
+}
+.comment a,
+.change a {
+    color: rgb(88, 96, 105);
+}
+.comment a:hover,
+.change a:hover {
+    text-decoration: underline;
+}
+.activity {
+    background: #fbfbfb;
+}
+#user-guide {
+    display: none;
+}
+.module-header {
+    background-color: #F2F2F2
+}
+#bottom-save-btn,
+#commit-btn,
+#top-save-btn {
+    color: #fff;
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+    margin-left: 4px;
+}
+#new-comment-actions {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 3em;
+}
+button.minor {
+    margin-bottom: 0;
+}
+a#this-bug {
+    font-size: 24px;
+    font-weight: normal;
+    color: #a3aab1;
+}
+a#this-bug:visited {
+    font-size: 24px;
+    color: #a3aab1;
+}
+a#this-bug:hover {
+    text-decoration: underline;
+    color: #a3aab1;
+}
+.module .fields-lhs,
+.module .fields-rhs {
+    min-width: auto !important;
+}
+#comment-actions {
+    margin-top: 1em;
+    clear: both;
+}
+#commit-btn,
+#cancel-btn {
+    margin-bottom: 1em;
+}
+.module .field {
+    display: inherit;
+}
+td.flag-value select {
+    min-width: 3em;
+}
+/* no flex for stop-crash addon compat */
+
+#module-details-content {
+    display: block;
+}
+#module-details-content .field .value {
+    display: block;
+}
