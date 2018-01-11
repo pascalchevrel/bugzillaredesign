@@ -41,7 +41,7 @@ div#message {
 }
 .gravatar {
     width: 44px;
-	height: 44px;
+    height: 44px;
     border-radius: 3px;
 }
 
@@ -132,6 +132,7 @@ div#message {
 }
 .module-content {
     display: flex;
+    justify-content: space-between;
 }
 button,
 button.minor {
@@ -209,7 +210,11 @@ a#this-bug:hover {
 }
 .module .fields-lhs,
 .module .fields-rhs {
-    min-width: auto !important;
+    width: auto;
+    min-width: auto;
+    white-space: nowrap;
+    display:inline-table;
+
 }
 #comment-actions {
     margin-top: 1em;
@@ -219,17 +224,23 @@ a#this-bug:hover {
 #cancel-btn {
     margin-bottom: 1em;
 }
-.module .field {
-    display: inherit;
-}
+
 td.flag-value select {
     min-width: 3em;
 }
-/* no flex for stop-crash addon compat */
-
-#module-details-content {
+#field-status_whiteboard {
+    float: left;
+}
+#field-status_whiteboard div.name {
+    display: table-cell !important;
+}
+#module-user-story-content textarea {
+    width: 100%;
+}
+/* no flex for extensions inserting data in Details section  */
+#module-details-content.module-content {
     display: block;
 }
-#module-details-content .field .value {
-    display: block;
+#field-cf_crash_signature iframe {
+    float: none !important;
 }
