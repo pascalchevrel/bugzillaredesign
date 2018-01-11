@@ -7,12 +7,21 @@ body {
 .change-set {
     box-shadow: none;
 }
+
 .change-set .comment,
 .change-set .change {
     min-height: 74px;
     background: #f6f8fa;
     padding-bottom: 0;
 }
+.change-set .activity .change {
+    min-height: auto;
+    background: inherit;
+}
+.change-set .comment, .change-set .change {
+    padding-bottom: 0;
+}
+
 .comment-text {
     margin: 0;
 }
