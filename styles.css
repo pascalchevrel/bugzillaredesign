@@ -9,6 +9,8 @@ body {
 }
 .change-set .comment,
 .change-set .change {
+    min-height: 74px;
+    background: #f6f8fa;
     padding-bottom: 0;
 }
 .comment-text {
@@ -38,6 +40,7 @@ div#message {
     display: inline-block;
     margin-left: -64px;
     padding-left: 0 !important;
+    position: absolute;
 }
 .gravatar {
     width: 44px;
@@ -243,4 +246,18 @@ td.flag-value select {
 }
 #field-cf_crash_signature iframe {
     float: none !important;
+}
+
+.change-author .user-role {
+    left: 0;
+    top: 46px;
+    position: absolute;
+    width: 64px;
+    margin-left: -58px;
+    font-size: smaller;
+}
+
+.change-author {
+    height: 2.5em;
+    padding: 10px 0 !important;
 }
