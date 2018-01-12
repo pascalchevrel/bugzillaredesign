@@ -267,3 +267,72 @@ td.flag-value select {
     height: 2.5em;
     padding: 10px 0 !important;
 }
+
+
+/* attachments */
+#attachments tr {
+    color: #6a737d;
+}
+
+#attachments .attach-desc-td {
+    background-color: transparent !important;
+    background-image: none !important;
+    padding-left: 10px;
+}
+
+#attachments .attach-desc a {
+    color: #24292e;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+#attachments .attach-desc a:hover {
+    color: #24292e;
+    text-decoration: none;
+}
+
+#attachments .attach-patch .attach-desc-td {
+    box-shadow: 2px 0 0 #E36209 inset;
+}
+
+#attachments .attach-desc-td {
+    box-shadow: 2px 0 0 #0366d6 inset;
+}
+
+#attachments .attach-desc-td .attach-desc {
+    margin-bottom: 1em;
+}
+
+#attachments td {
+    border-top: 1px solid #e1e4e8;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+
+#attachments a {
+    font-weight: normal;
+    color: rgb(88, 96, 105);
+
+}
+
+#attachments a:hover {
+    color: rgb(88, 96, 105);
+    text-decoration: underline;
+}
+
+#attachments-actions {
+    font-size: 14px;
+}
+#attachments .flag-name-status {
+    font-weight: normal;
+    color: green;
+}
+
+#module-attachments-content {
+    display: block;
+}
+
+#attachments .attach-info {
+    margin-top: 0.5em;
+}
