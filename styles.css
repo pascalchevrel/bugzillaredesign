@@ -10,7 +10,6 @@ body {
 
 .change-set .comment,
 .change-set .change {
-    min-height: 74px;
     background: #f6f8fa;
     padding-bottom: 0;
 }
@@ -80,9 +79,6 @@ div#message {
     border-width: 8px;
     border-right-color: #e6ebf1;
 }
-.comment-tags {
-    padding: 4px 0 !important;
-}
 .comment-tag {
     border: 1px solid #d1d5da;
     padding: 2px 6px 2px 4px;
@@ -90,6 +86,7 @@ div#message {
     border-radius: 4px;
     background-color: #F1F8FF;
     color: #6a737d;
+    display: inline-block;
 }
 .comment-text {
     font-size: 14px;
