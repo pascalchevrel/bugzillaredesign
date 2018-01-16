@@ -364,3 +364,41 @@ td.flag-value select {
     color: #2cbe4e;
     font-style: normal;
 }
+
+/* bug links */
+#field-value-dependson, #field-value-blocked {
+    font-size: 0;
+}
+
+.bz_bug_link {
+    display: inline-block;
+    padding: 3px 4px;
+    font-size: 13px;
+    line-height: 1;
+    border-radius: 2px;
+    margin: 1px;
+    min-width: 4.3em;
+    text-align: center;
+}
+
+.bz_status_NEW,
+.bz_status_REOPENED{
+    color: #ffffff;
+    background-color: #0095dd;
+}
+
+.bz_status_RESOLVED{
+    text-decoration: line-through;
+    text-decoration-color: #58606966;
+    color: #586069;
+    background-color: #eaecef;
+}
+
+.bz_status_UNCONFIRMED {
+    color: white;
+    background-color: orange;
+}
+
+.bz_status_UNCONFIRMED::after {
+    content: " ? ";
+}
