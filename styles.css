@@ -31,9 +31,6 @@ body {
     color: #6a737d;
     border: 1px solid #d1d5da;
 }
-div#message {
-    display: none
-}
 #field-status_summary {
     color: #666;
 }
@@ -182,7 +179,8 @@ button.minor:hover {
 .activity {
     background: #fbfbfb;
 }
-#user-guide {
+/* remove useless links */
+#user-guide, #bugzilla-etiquette, div#message {
     display: none;
 }
 .module-header {
