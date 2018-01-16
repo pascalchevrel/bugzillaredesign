@@ -340,3 +340,21 @@ td.flag-value select {
 #attachments-add-link::before {
     content: '📎 ';
 }
+
+
+/* emphasize reporter name */
+#field-value-reporter .vcard {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#field-value-reporteer .vcard a {
+    color: #2CBE4E;
+}
+
+/* less intrusive drop-down arrow */
+.vcard a .fn::after, .vcard a .ln::after {
+    content: ' \25BF';
+    opacity: 0.5 !important;
+}
