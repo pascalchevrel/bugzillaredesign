@@ -336,3 +336,7 @@ td.flag-value select {
 #attachments .attach-info {
     margin-top: 0.5em;
 }
+
+#attachments-add-link::before {
+    content: '📎 ';
+}
