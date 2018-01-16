@@ -357,3 +357,10 @@ td.flag-value select {
     content: ' \25BF';
     opacity: 0.5 !important;
 }
+
+
+/* make email requested in NeedInfo stand out */
+#needinfo_container em  {
+    color: #2cbe4e;
+    font-style: normal;
+}
