@@ -221,7 +221,6 @@ a#this-bug:hover {
 .module .fields-rhs {
     width: auto;
     min-width: auto;
-    white-space: nowrap;
     display:inline-table;
 
 }
