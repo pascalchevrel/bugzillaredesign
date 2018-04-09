@@ -1,6 +1,7 @@
 body {
     background: white;
     background-image: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .module-header,
 .module-content,
@@ -41,6 +42,20 @@ body {
     padding: 2px 1em;
     border-radius: 2px;
 }
+
+#field-status_summary b.bz_status_RESOLVED,
+#field-status_summary b.bz_status_VERIFIED {
+   background-color: #cb2431;
+}
+
+#field-status_summary b.bz_status_ASSIGNED {
+   background-color: #0095dd;
+}
+
+#field-status_summary b.bz_status_UNCONFIRMED {
+   background-color: #5319e7;
+}
+
 .change-gravatar {
     display: inline-block;
     margin-left: -64px;
@@ -189,18 +204,19 @@ main#bugzilla-body button.minor:hover {
 .module-header {
     background-color: #F6F8FA;
 }
-#bottom-save-btn,
-#commit-btn,
+#new-comment-actions #bottom-save-btn,
+button#commit-btn.major,
 #top-save-btn {
     color: #fff;
     background-color: #28a745;
     background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
-    margin-left: 4px;
 }
+
 #new-comment-actions {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 3em;
+    justify-content: space-between;
 }
 button.minor {
     margin-bottom: 0;
@@ -225,10 +241,23 @@ a#this-bug:hover {
     display:inline-table;
 
 }
+
 #comment-actions {
     margin-top: 1em;
     clear: both;
 }
+
+table td.comment-actions button {
+    color:#586069 !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    padding: 2px 5px  !important;
+    margin: 8px 0 0 10px !important;
+    border: 1px solid rgba(27,31,35,0.1) !important;
+    border-radius: 3px !important;
+}
+
+
 #commit-btn,
 #cancel-btn {
     margin-bottom: 1em;
@@ -382,23 +411,49 @@ td.flag-value select {
 }
 
 .bz_bug_link.bz_status_NEW,
-.bz_bug_link.bz_status_REOPENED{
+.bz_bug_link.bz_status_REOPENED,
+.bz_bug_link.bz_status_ASSIGNED {
     color: #ffffff;
     background-color: #0095dd;
 }
 
-.bz_bug_link.bz_status_RESOLVED{
-    text-decoration: line-through;
-    text-decoration-color: #58606966;
-    color: #586069;
-    background-color: #eaecef;
+.bz_bug_link.bz_status_RESOLVED,
+.bz_bug_link.bz_status_VERIFIED {
+    color: white;
+    background-color: #cb2431;
+    text-decoration: none;
 }
 
 .bz_bug_link.bz_status_UNCONFIRMED {
     color: white;
-    background-color: orange;
+    background-color: #5319e7;
 }
 
 .bz_bug_link.bz_status_UNCONFIRMED::after {
     content: " ? ";
+}
+
+.module .field,
+.module .field .name {
+    vertical-align: baseline;
+}
+
+table.tracking-flags {
+    margin-left:-8em;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+#module-firefox-tracking-flags-content .name {
+    vertical-align:top;
+}
+
+table.tracking-flags td, .tracking-flags th {
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+table.tracking-flags tr:nth-child(2n) {
+  background-color: #f6f8fa;
+    color: #666;
 }
