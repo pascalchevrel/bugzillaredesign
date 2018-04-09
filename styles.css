@@ -1,5 +1,4 @@
 @-moz-document url-prefix("https://bugzilla.mozilla.org") {
-
 body {
      background: white;
      background-image: none;
@@ -430,9 +429,7 @@ a, a:hover {
      color: white;
      background-color: #5319e7;
 }
- XXX.bz_bug_link.bz_status_UNCONFIRMED::after {
-     content: " ? ";
-}
+
  .module .field, .module .field .name {
      vertical-align: baseline;
 }
@@ -458,6 +455,15 @@ a, a:hover {
     background-color: #f6f8fa;
     border:1px solid #d1d5da;
     border-radius: 3px;
+}
+
+#add-comment::before {
+    content: '\E254';
+    font-family: 'Material Icons';
+    margin-left: -52px;
+    font-size: 44px;
+    position: absolute;
+    transform: scaleX(-1);
 }
 
 #comment-tabs {
@@ -523,4 +529,5 @@ textarea#comment:focus {
 .change-set, #new-comment-actions, #add-comment {
      margin-left: 64px
 }
+
 }
