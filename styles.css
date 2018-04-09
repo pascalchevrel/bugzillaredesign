@@ -68,6 +68,7 @@ body, td, th, input, select, option, optgroup, button, .text_input {
      border-radius: 3px;
      color: #6a737d;
      background-color: #f6f8fa;
+     min-height: 40px;
 }
  .change-set::before {
      position: absolute;
@@ -193,15 +194,25 @@ body, td, th, input, select, option, optgroup, button, .text_input {
      color: #fff;
      background-color: #28a745;
      background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+
 }
  #new-comment-actions {
      display: flex;
      flex-direction: row-reverse;
      margin-bottom: 3em;
+     margin-top: -1em;
      justify-content: space-between;
+     padding: 0 16px;
 }
+
+
+#new-comment-actions #bottom-save-btn {
+    margin-top: -2em;
+}
+
  button.minor {
      margin-bottom: 0;
+
 }
  a#this-bug {
      font-size: 24px;
@@ -391,3 +402,69 @@ body, td, th, input, select, option, optgroup, button, .text_input {
      color: #666;
 }
 
+/* comment textarea */
+ #add-comment {
+    background-color: #f6f8fa;
+    border:1px solid #d1d5da;
+    border-radius: 3px;
+}
+
+#comment-tabs {
+    margin-top: 5px;
+    padding: 0 8px;
+    margin-bottom: -1px;
+}
+
+#comment-tabs li {
+    border: 1px solid transparent;
+    padding: 8px 12px
+}
+
+#comment-tabs li[aria-selected="true"] {
+    border: 1px solid #d1d5da;
+    border-bottom: none;
+}
+
+#comment-edit-tabpanel {
+    padding: 8px;
+    background-color: white;
+    border-top: 1px solid #d1d5da;
+}
+
+pre#comment-preview {
+    border-top: 1px solid #d1d5da;
+
+}
+
+textarea#comment {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    resize: vertical;
+    background-color: #fafbfc;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+}
+
+textarea#comment:focus {
+    border-color: #2188ff;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075),0 0 0 0.2em rgba(3,102,214,0.3);
+}
+
+
+#after-comment-commit-button {
+
+    background-color: white;
+    padding: 0 16px;
+    margin: 0;
+    padding-bottom: 4em;
+}
+
+#resolve-as, #bottom-status {
+    margin-top: -2em;
+}
+
+#resolve-as button {
+    margin-left: 8px;
+}
