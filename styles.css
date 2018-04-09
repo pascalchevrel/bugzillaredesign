@@ -1,3 +1,5 @@
+@-moz-document url-prefix("https://bugzilla.mozilla.org") {
+
 body {
      background: white;
      background-image: none;
@@ -5,6 +7,55 @@ body {
 
 body, td, th, input, select, option, optgroup, button, .text_input {
      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+a, a:hover {
+     color: #0366d6;
+}
+#wrapper {
+    height: auto;
+}
+
+#header {
+     background-color:#24292e;
+}
+
+#header img[title="Mozilla"] {
+   filter: invert(100%);
+}
+
+#header .icon {
+    color: #c8c9ca;
+}
+
+#header a,
+#header a:visited {
+    color: rgba(255,255,255,0.75);
+    font-weight: 600;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+#header #quicksearch_top {
+    color:rgba(255,255,255,0.75);
+    background-color: #404448;
+}
+
+#header .dropdown li {
+
+}
+
+#header .dropdown a {
+   font-weight: normal;
+   display: block;
+   padding: 4px 10px 4px 15px;
+}
+
+#header .dropdown li:hover,#header .dropdown li:hover * {
+    background-color: #0366d6;
+    color: #fff;
 }
 
  .module-header, .module-content, .change-set {
@@ -20,9 +71,7 @@ body, td, th, input, select, option, optgroup, button, .text_input {
  .change-set .comment, .change-set .change {
      padding-bottom: 0;
 }
- .comment-text {
-     margin: 0;
-}
+
  .change-head {
      background-color: #f6f8fa;
 }
@@ -98,8 +147,10 @@ body, td, th, input, select, option, optgroup, button, .text_input {
      font-size: 14px;
      font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
      padding: 1em;
-     line-height: 1.3em;
+     padding-right: 20%;
+     line-height: 1.5em;
      color: #24292e;
+     margin: 0;
 }
  .comment-text span.quote, .comment-text span.quote_wrapped {
      background-color: white !important;
@@ -467,4 +518,9 @@ textarea#comment:focus {
 
 #resolve-as button {
     margin-left: 8px;
+}
+
+.change-set, #new-comment-actions, #add-comment {
+     margin-left: 64px
+}
 }
