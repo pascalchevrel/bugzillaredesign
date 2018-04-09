@@ -392,10 +392,8 @@ td.flag-value select {
     font-style: normal;
 }
 
-
-
-/* bug links */
-#field-value-dependson, #field-value-blocked {
+/* bug links  in tracking module */
+#module-tracking-content .fields-rhs div.value {
     font-size: 0;
 }
 
@@ -427,10 +425,6 @@ td.flag-value select {
 .bz_bug_link.bz_status_UNCONFIRMED {
     color: white;
     background-color: #5319e7;
-}
-
-.bz_bug_link.bz_status_UNCONFIRMED::after {
-    content: " ? ";
 }
 
 .module .field,
