@@ -19,7 +19,7 @@ a, a:hover {
      background-color:#24292e;
 }
 
-#header img[title="Mozilla"] {
+#header button[title="Mozilla"] img {
    filter: invert(100%);
 }
 
@@ -528,6 +528,12 @@ textarea#comment:focus {
 
 .change-set, #new-comment-actions, #add-comment {
      margin-left: 64px
+}
+
+
+/* fix a bug in which Home and End keys don't work in Firefox  */
+#bugzilla-body {
+    overflow-y: auto;
 }
 
 }
