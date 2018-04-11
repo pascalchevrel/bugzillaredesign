@@ -536,4 +536,20 @@ textarea#comment:focus {
     overflow-y: auto;
 }
 
+/* anchor link */
+.change-set:target .change-head,
+.change-set:target .activity
+{
+    background-color: #f1f8ff;
+
+}
+
+.change-set:target {
+    border: 2px solid #2188ff;
+    outline: none;
+}
+
+.change-set:target::before {
+    border-right-color: #2188ff;
+}
 }
