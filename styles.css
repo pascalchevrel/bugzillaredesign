@@ -89,7 +89,7 @@ a, a:hover {
      background-color: #cb2431;
 }
  #field-status_summary b.bz_status_ASSIGNED {
-     background-color: #0095dd;
+     background-color: #0366d6;
 }
  #field-status_summary b.bz_status_UNCONFIRMED {
      background-color: #5319e7;
@@ -390,7 +390,7 @@ a, a:hover {
      text-align: center;
 }
  #field-value-reporter .vcard a {
-     color: #0095DD;
+     color: #0366d6;
 }
 /* less intrusive drop-down arrow */
  .vcard a .fn::after, .vcard a .ln::after {
@@ -418,7 +418,7 @@ a, a:hover {
 }
  .bz_bug_link.bz_status_NEW, .bz_bug_link.bz_status_REOPENED, .bz_bug_link.bz_status_ASSIGNED {
      color: #ffffff;
-     background-color: #0095dd;
+     background-color: #0366d6;
 }
  .bz_bug_link.bz_status_RESOLVED, .bz_bug_link.bz_status_VERIFIED {
      color: white;
@@ -566,5 +566,57 @@ textarea#comment:focus {
     font-size: 12px;
     background: linear-gradient(#54a3ff, #006eed);
 }
-}
 
+/* Mobile  adjustments */
+@media screen and (max-width: 640px) {
+
+    #header {
+        width: 600px;
+    }
+
+    #header button[title="Mozilla"] img {
+        display: none;
+    }
+
+
+    #header #quicksearch_top {
+        width: initial;
+    }
+
+    #header .searchbox-outer {
+        width: 220px;
+    }
+
+    .change-gravatar {
+        margin-left: 0;
+        position: static;
+    }
+    .gravatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .change-gravatar .vcard {
+        width: 50px;
+    }
+    .change-author {
+        height: auto;
+    }
+    .change-author .user-role {
+        left: auto;
+        top: auto;
+        position: static;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .change-set::before,
+    #add-comment::before  {
+        content: none;
+    }
+
+    .change-set, #new-comment-actions, #add-comment {
+        margin-left: 0;
+    }
+}
+}
