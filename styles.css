@@ -552,4 +552,20 @@ textarea#comment:focus {
 .change-set:target::before {
     border-right-color: #2188ff;
 }
+
+#header-requests-menu-button .icon {
+    background: inherit;
+
 }
+
+#header-requests-menu-button .icon::before {
+    font-size: 24px;
+}
+
+#header-requests-menu-button .badge {
+    font-size: 12px;
+    background: linear-gradient(#54a3ff, #006eed);
+}
+
+}
+
