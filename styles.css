@@ -637,4 +637,12 @@ textarea#comment:focus {
     line_height: 1.5em;
 }
 /* #block1 */
+
+
+/* #block2 displayed only in edit mode and breaks flex because of https://bugzilla.mozilla.org/show_bug.cgi?id=1454330 */
+#field-status-edit {
+    display: block;
+}
+/* #block2 */
+
 }
