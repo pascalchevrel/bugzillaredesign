@@ -11,8 +11,10 @@ body, td, th, input, select, option, optgroup, button, .text_input {
 a, a:hover {
      color: #0366d6;
 }
+
 #wrapper {
     height: auto;
+    min-height: 500px;
 }
 
 #header {
