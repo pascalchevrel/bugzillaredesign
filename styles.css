@@ -622,7 +622,7 @@
         }
     }
 
-    /* #block1 Style emails recipient list for changes in a readible way */
+    /* #start - Style emails recipient list for changes in a readible way */
     #main-inner dl dl dd {
         color: transparent;
         display: flex;
@@ -636,13 +636,19 @@
         font-size: inherit;
         line_height: 1.5em;
     }
-    /* #block1 */
+    /* #end */
 
 
-    /* #block2 displayed only in edit mode and breaks flex because of https://bugzilla.mozilla.org/show_bug.cgi?id=1454330 */
+    /* #start - displayed only in edit mode and breaks flex because of https://bugzilla.mozilla.org/show_bug.cgi?id=1454330 */
     #field-status-edit {
         display: block;
     }
-    /* #block2 */
+    /* #end */
+
+    /* #start - File bug in header green */
+    #header .link-file span {
+        color:#2cbe4e;
+    }
+    /* #end */
 
 }
