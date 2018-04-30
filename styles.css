@@ -385,7 +385,12 @@
          margin-top: 0.5em;
     }
      #attachments-add-link::before {
-         content: '📎 ';
+        content: '\E2BC';
+        font-family: 'Material Icons';
+        vertical-align: middle;
+        color: #404040;
+        margin-right: 5px;
+        font-size: 26px;
     }
     /* emphasize reporter name */
      #field-value-reporter .vcard {
