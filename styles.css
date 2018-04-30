@@ -213,8 +213,8 @@
          color: #24292e;
          text-shadow: none;
          box-shadow: none;
-         background-color: #eff3f6;
-         background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+         background-color: #f6f8fa;
+         background-image: none;
     }
      main#bugzilla-body button:hover, main#bugzilla-body button.minor:hover {
          box-shadow: none;
@@ -242,12 +242,25 @@
      .module-header {
          background-color: #F6F8FA;
     }
-     #new-comment-actions #bottom-save-btn, button#commit-btn.major, #top-save-btn {
-         color: #fff;
-         background-color: #28a745;
-         background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
 
+    /* start - save buttons */
+     #new-comment-actions #bottom-save-btn,
+     button#commit-btn.major,
+     #top-save-btn {
+         color: #fff;
+         background-color: #2bb64c;
+         background-image: none;
     }
+
+     #new-comment-actions #bottom-save-btn:hover,
+     button#commit-btn.major:hover,
+     #top-save-btn:hover {
+         color: #fff;
+         background-color: #34d058;
+         background-image: none;
+    }
+    /* end */
+
      #new-comment-actions {
          display: flex;
          flex-direction: row-reverse;
@@ -653,6 +666,9 @@
     /* #start - File bug in header green */
     #header .link-file span {
         color:#2cbe4e;
+    }
+    #header .link-file span:hover {
+        color:#34d058;
     }
     /* #end */
 
