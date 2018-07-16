@@ -5,7 +5,7 @@
     }
 
     body, td, th, input, select, option, optgroup, button, .text_input {
-         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif,;
     }
 
     a, a:hover {
@@ -146,7 +146,7 @@
     }
      .comment-text {
          font-size: 14px;
-         font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+         font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, "Twemoji Mozilla", sans-serif;
          padding: 1em;
          padding-right: 20%;
          line-height: 1.5em;
@@ -649,10 +649,10 @@
 
     #main-inner dl dl dd code {
         color: #666;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
         min-width: 230px;
         font-size: inherit;
-        line_height: 1.5em;
+        line-height: 1.5em;
     }
     /* #end */
 
