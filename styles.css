@@ -1,15 +1,20 @@
-@-moz-document url-prefix("https://bugzilla.mozilla.org") {
+    :root {
+        --black: #24292e;
+        --blue: #0366d6;
+        --green: #2cbe4e;
+    }
+
     body {
-         background: white;
-         background-image: none;
+        background: white;
+        background-image: none;
     }
 
     body, td, th, input, select, option, optgroup, button, .text_input {
-         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif,;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
     }
 
     a, a:hover {
-         color: #0366d6;
+         color:var(--blue);
     }
 
     #wrapper {
@@ -55,7 +60,7 @@
     }
 
     #header .dropdown li:hover,#header .dropdown li:hover * {
-        background-color: #0366d6;
+        background-color: var(--blue);
         color: #fff;
     }
 
@@ -82,7 +87,7 @@
     }
      #field-status_summary b {
          color: white;
-         background-color: #2cbe4e;
+         background-color: var(--green);
          display: inline-block;
          padding: 2px 1em;
          border-radius: 2px;
@@ -91,7 +96,7 @@
          background-color: #cb2431;
     }
      #field-status_summary b.bz_status_ASSIGNED {
-         background-color: #0366d6;
+         background-color: var(--blue);
     }
      #field-status_summary b.bz_status_UNCONFIRMED {
          background-color: #5319e7;
@@ -248,7 +253,7 @@
      button#commit-btn.major,
      #top-save-btn {
          color: #fff;
-         background-color: #2bb64c;
+         background-color: var(--green);
          background-image: none;
     }
 
@@ -366,7 +371,7 @@
          box-shadow: 2px 0 0 #E36209 inset;
     }
      #attachments .attach-desc-td {
-         box-shadow: 2px 0 0 #0366d6 inset;
+         box-shadow: 2px 0 0 var(--blue) inset;
     }
      #attachments .attach-desc-td .attach-desc {
          margin-bottom: 1em;
@@ -410,7 +415,7 @@
          text-align: center;
     }
      #field-value-reporter .vcard a {
-         color: #0366d6;
+         color: var(--blue);
     }
     /* less intrusive drop-down arrow */
      .vcard a .fn::after, .vcard a .ln::after {
@@ -419,7 +424,7 @@
     }
     /* make email requested in NeedInfo stand out */
      #needinfo_container em {
-         color: #2cbe4e;
+         color: var(--green);
          font-style: normal;
     }
     /* bug links in tracking module */
@@ -438,7 +443,7 @@
     }
      .bz_bug_link.bz_status_NEW, .bz_bug_link.bz_status_REOPENED, .bz_bug_link.bz_status_ASSIGNED {
          color: #ffffff;
-         background-color: #0366d6;
+         background-color: var(--blue);
     }
      .bz_bug_link.bz_status_RESOLVED, .bz_bug_link.bz_status_VERIFIED {
          color: white;
@@ -649,7 +654,7 @@
 
     #main-inner dl dl dd code {
         color: #666;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"Twemoji Mozilla", sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
         min-width: 230px;
         font-size: inherit;
         line-height: 1.5em;
@@ -665,11 +670,24 @@
 
     /* #start - File bug in header green */
     #header .link-file span {
-        color:#2cbe4e;
+        color: var(--green);
     }
     #header .link-file span:hover {
         color:#34d058;
     }
     /* #end */
 
-}
+    /* start - style new comments since last visit delimiter */
+    .new-changes-separator {
+        border-top: 2px solid var(--green);
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .new-changes-separator span {
+        background-color: var(--green);
+        color: white;
+        border: none;
+    }
+    /* #end */
