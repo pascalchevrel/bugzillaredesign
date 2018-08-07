@@ -2,6 +2,7 @@
         --black: #24292e;
         --blue: #0366d6;
         --green: #2cbe4e;
+        --red: #cb2431;
     }
 
     body {
@@ -93,7 +94,7 @@
          border-radius: 2px;
     }
      #field-status_summary b.bz_status_RESOLVED, #field-status_summary b.bz_status_VERIFIED {
-         background-color: #cb2431;
+         background-color: var(--red);
     }
      #field-status_summary b.bz_status_ASSIGNED {
          background-color: var(--blue);
@@ -447,7 +448,7 @@
     }
      .bz_bug_link.bz_status_RESOLVED, .bz_bug_link.bz_status_VERIFIED {
          color: white;
-         background-color: #cb2431;
+         background-color: var(--red);
          text-decoration: none;
     }
      .bz_bug_link.bz_status_UNCONFIRMED {
@@ -691,3 +692,10 @@
         border: none;
     }
     /* #end */
+
+    /* start - style unassigned bugs differently */
+    span#field-value-assigned_to i {
+        color: var(--red);
+        font-weight: bold;
+        font-style: normal;
+    }
