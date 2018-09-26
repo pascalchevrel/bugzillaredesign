@@ -50,14 +50,11 @@
         background-color: #404448;
     }
 
-    #header .dropdown li {
-
-    }
-
     #header .dropdown a {
-       font-weight: normal;
-       display: block;
-       padding: 4px 10px 4px 15px;
+        font-weight: normal;
+        display: block;
+        padding: 4px 10px 4px 15px;
+        color: inherit
     }
 
     #header .dropdown li:hover,#header .dropdown li:hover * {
