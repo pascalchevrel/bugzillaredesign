@@ -695,3 +695,87 @@
         font-weight: bold;
         font-style: normal;
     }
+
+    /* start - Bug list */
+    table.bz_buglist {
+        background-color: #f6f8fa;
+        border: 1px solid #e1e4e8;
+        border-radius: 3px 3px 0 0;
+        border-collapse: collapse;
+    }
+
+    table.bz_buglist tr {
+        line-height: 2.5em;
+        border: 1px solid #e1e4e8;
+    }
+
+    table.bz_buglist tr:hover {
+        background-color: #f6f8fa !important;
+    }
+
+    table.bz_buglist tr.bz_row_odd,
+    table.bz_buglist tr.bz_row_even {
+        background-color:white;
+        color: var(--black);
+    }
+
+    table.bz_buglist .bz_critical {
+        color: var(--red) !important;
+    }
+
+    table.bz_buglist thead th.sorted_-1,
+    table.bz_buglist thead th.sorted_0,
+    table.bz_buglist thead th.sorted_1,
+    table.bz_buglist thead th.sorted_2,
+    table.bz_buglist thead th.sorted_3,
+    table.bz_buglist thead th.sorted_4,
+    table.bz_buglist thead th.sorted_5,
+    table.bz_buglist thead th.sorted_6,
+    table.bz_buglist thead th.sorted_7,
+    table.bz_buglist thead th.sorted_8,
+    table.bz_buglist thead th.sorted_9,
+    table.bz_buglist thead th.sorted_10,
+    table.bz_buglist thead th.sorted_11,
+    table.bz_buglist thead th.sorted_12 {
+        background-color: #f6f8fa;
+    }
+
+    table.bz_buglist thead th a{
+        color: var(--black);
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    table.bz_buglist thead th {
+       border-bottom: 1px solid #e1e4e8;
+    }
+
+table.bz_buglist tr.bz_secure td.first-child {
+    background-image: none;
+    white-space: nowrap;
+}
+table.bz_buglist tr.bz_secure td.first-child a {
+    background-image: none;
+    white-space: nowrap;
+}
+
+td.bz_id_column a {
+    display: inline-block;
+    line-height: 1em;
+    padding: 4px 4px;
+    border-radius: 2px;
+    margin: 1px;
+    min-width: 4.3em;
+    text-align: center;
+    color: white;
+    background-color: var(--blue);
+    letter-spacing: 1.5px;
+
+}
+
+table.bz_buglist tr.bz_secure td.first-child a::before {
+    content: '\01F512';
+    vertical-align: middle;
+    margin-left: -2em;
+    padding-right: 1em;
+}
