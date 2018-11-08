@@ -163,7 +163,7 @@
         display: inline-block;
     }
     .comment-text {
-        font-size: --defaut-font-size;
+        font-size: var(--defaut-font-size);
         font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, "Twemoji Mozilla", sans-serif;
         padding: 1em;
         padding-right: 20%;
@@ -381,7 +381,7 @@
     }
     #attachments .attach-desc a {
         color: #24292e;
-        font-size: --defaut-font-size;
+        font-size: var(--defaut-font-size);
         font-weight: bold;
     }
     #attachments .attach-desc a:hover {
@@ -411,7 +411,7 @@
         text-decoration: underline;
     }
     #attachments-actions {
-        font-size: --defaut-font-size;
+        font-size: var(--defaut-font-size);
     }
     #attachments .flag-name-status {
         font-weight: normal;
@@ -773,7 +773,7 @@
     table.bz_buglist thead th a {
         color: var(--black);
         font-weight: normal;
-        font-size: --defaut-font-size;
+        font-size: var(--defaut-font-size);
     }
 
     table.bz_buglist thead th {
@@ -818,9 +818,9 @@
     /* start - User story */
     #user-story {
         font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Twemoji Mozilla", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-        font-size: --defaut-font-size;
+        font-size: var(--defaut-font-size);
         line-height: 1.5em;
         padding: 1em;
-        color: --black;
+        color: var(--black);
     }
     /* #end */
