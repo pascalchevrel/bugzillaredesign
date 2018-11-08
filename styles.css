@@ -732,10 +732,11 @@
         border: 1px solid #e1e4e8;
         border-radius: 3px 3px 0 0;
         border-collapse: collapse;
+        margin: 1em 0;
     }
 
     table.bz_buglist tr {
-        line-height: 2.5em;
+        line-height: 2.4em;
         border: 1px solid #e1e4e8;
     }
 
@@ -804,9 +805,46 @@
 
     table.bz_buglist tr.bz_secure td.first-child a::before {
         content: '\01F512';
-        vertical-align: middle;
-        margin-left: -2em;
-        padding-right: 1em;
+        margin-left: -1.6em;
+        display:block;
+        float: left;
+    }
+
+    .bz_short_desc_column a {
+        display: block;
+    }
+
+    .bz_result_count {
+        display: block;
+        float: right;
+        font-size: 1.3em;
+        color: var(--blue);
+    }
+
+    ul.search_description {
+        display: flex;
+        background-color: #f6f8fa;
+        border: 1px solid #e1e4e8;
+        border-radius: 3px 3px 0 0;
+        padding: 1em;
+    }
+
+    ul.search_description li  {
+        flex-grow: 1;
+    }
+
+    ul.search_description li strong {
+        display: block;
+    }
+
+    hr {
+        visibility: hidden;
+    }
+
+    .bz_query_timestamp {
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: 1px;
     }
     /* #end */
     /* start - Align Private comment checkbox correctly */
