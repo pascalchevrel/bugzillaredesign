@@ -3,6 +3,7 @@
         --blue: #0366d6;
         --green: #2cbe4e;
         --red: #cb2431;
+        --defaut-font-size: 14px;
     }
 
     body {
@@ -162,7 +163,7 @@
         display: inline-block;
     }
     .comment-text {
-        font-size: 14px;
+        font-size: --defaut-font-size;
         font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, "Twemoji Mozilla", sans-serif;
         padding: 1em;
         padding-right: 20%;
@@ -380,7 +381,7 @@
     }
     #attachments .attach-desc a {
         color: #24292e;
-        font-size: 14px;
+        font-size: --defaut-font-size;
         font-weight: bold;
     }
     #attachments .attach-desc a:hover {
@@ -410,7 +411,7 @@
         text-decoration: underline;
     }
     #attachments-actions {
-        font-size: 14px;
+        font-size: --defaut-font-size;
     }
     #attachments .flag-name-status {
         font-weight: normal;
@@ -768,7 +769,7 @@
     table.bz_buglist thead th a {
         color: var(--black);
         font-weight: normal;
-        font-size: 14px;
+        font-size: --defaut-font-size;
     }
 
     table.bz_buglist thead th {
@@ -803,3 +804,5 @@
         margin-left: -2em;
         padding-right: 1em;
     }
+    /* #end */
+
