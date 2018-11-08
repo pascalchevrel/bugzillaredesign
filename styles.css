@@ -806,7 +806,7 @@
     }
     /* #end */
     /* start - Align Private comment checkbox correctly */
-    #add-comment-private, #bugzilla-etiquette {
+    #add-comment-private {
         line-height: 3em;
         padding-right: 1em;
     }
