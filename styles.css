@@ -526,12 +526,12 @@
 
     #comment-tabs li {
         border: 1px solid transparent;
-        padding: 8px 12px
+        padding: 10px
     }
 
     #comment-tabs li[aria-selected="true"] {
         border: 1px solid #d1d5da;
-        border-bottom: none;
+        border-bottom: 1px solid white;
     }
 
     #comment-edit-tabpanel {
