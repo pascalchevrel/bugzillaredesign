@@ -841,11 +841,19 @@
         visibility: hidden;
     }
 
-    .bz_query_timestamp {
-        font-weight: bold;
-        font-size: 2em;
+    .bz_query_head {
         letter-spacing: 1px;
     }
+
+    .bz_query_head h1 {
+        margin-bottom: 0;
+    }
+
+    .bz_query_timestamp {
+        font-size: large;
+        font-weight: normal;
+    }
+
     /* #end */
     /* start - Align Private comment checkbox correctly */
     #add-comment-private {
