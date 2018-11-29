@@ -862,12 +862,4 @@
         color: var(--black);
     }
     /* #end */
-    /* start - Show announcements only on mouse over */
-    #message-container {
-        height: 0.5em;
-    }
 
-    #message-container:hover {
-        height: auto;
-    }
-    /* #end */
