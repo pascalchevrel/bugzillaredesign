@@ -124,7 +124,6 @@
         width: 44px;
         height: 44px;
         border-radius: 3px;
-        margin-top: -26px;
     }
     .change-head {
         padding-left: 10px;
@@ -325,10 +324,15 @@
         min-width: auto;
         display: inline-table;
     }
-    #comment-actions {
+    .comment-actions {
         margin-top: 1em;
-        clear: both;
+        text-align: right;
     }
+
+    .comment-actions > [role="group"] {
+        display:initial !important;
+    }
+
     table td.comment-actions button {
         color: #586069 !important;
         background-image: none !important;
@@ -372,6 +376,7 @@
     .change-author {
         height: 2em;
         padding: 10px 0 !important;
+        display:block;
     }
     /* attachments */
     #attachments tr {
