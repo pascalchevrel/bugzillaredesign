@@ -453,8 +453,15 @@
         opacity: 0.5 !important;
     }
     /* make email requested in NeedInfo stand out */
+    #module-people-content .field .name,
+    #module-people-content .field .name + .container .fn{
+        /* top of page*/
+        color: orange;
+    }
+
     #needinfo_container em {
-        color: var(--green);
+        /* bottom of page*/
+        color: orange;
         font-style: normal;
     }
     /* bug links in tracking module */
