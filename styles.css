@@ -162,7 +162,7 @@
         color: #6a737d;
         display: inline-block;
     }
-    .comment-text {
+    pre.comment-text {
         font-size: var(--defaut-font-size);
         font-family: "Fira Sans", "Open Sans", "Helvetica Neue", Arial, Helvetica, "Twemoji Mozilla", sans-serif;
         padding: 1em;
@@ -171,8 +171,8 @@
         color: #24292e;
         margin: 0;
     }
-    .comment-text span.quote,
-    .comment-text span.quote_wrapped {
+    pre.comment-text span.quote,
+    pre.comment-text span.quote_wrapped {
         background-color: white !important;
         color: #6a737d !important;
         position: relative;
@@ -182,7 +182,7 @@
         width: calc(100% - 2em) !important;
         padding-left: 0.7em !important;
     }
-    .comment-text span.quote::before {
+    pre.comment-text span.quote::before {
         content: "";
         width: 1em;
         background-color: white;
