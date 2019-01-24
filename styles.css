@@ -219,7 +219,6 @@
     .module-content {
         display: flex;
         justify-content: space-between;
-        background-color: var(--light-gray);
     }
     main#bugzilla-body button,
     main#bugzilla-body button.minor,
