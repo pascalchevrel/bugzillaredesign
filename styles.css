@@ -3,11 +3,12 @@
         --blue: #0366d6;
         --green: #2cbe4e;
         --red: #cb2431;
+        --light-gray: var(--light-gray);
         --defaut-font-size: 14px;
     }
 
     body {
-        background: white;
+        background-color: #white;
         background-image: none;
     }
 
@@ -91,7 +92,7 @@
     }
 
     .change-head {
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
     }
 
     #field-status_summary {
@@ -135,7 +136,7 @@
         border: 1px solid #d1d5da;
         border-radius: 3px;
         color: #6a737d;
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         min-height: 40px;
     }
     .change-set::before {
@@ -218,6 +219,7 @@
     .module-content {
         display: flex;
         justify-content: space-between;
+        background-color: var(--light-gray);
     }
     main#bugzilla-body button,
     main#bugzilla-body button.minor,
@@ -235,7 +237,7 @@
         color: #24292e;
         text-shadow: none;
         box-shadow: none;
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         background-image: none;
     }
     main#bugzilla-body button:hover,
@@ -268,7 +270,8 @@
         display: none;
     }
     .module-header {
-        background-color: #F6F8FA;
+        background-color: var(--light-gray);
+        border-radius: 2px 2px 0 0;
     }
 
     /* start - save buttons */
@@ -513,13 +516,13 @@
         border: 1px solid lightgray;
     }
     table.tracking-flags tr:nth-child(2n) {
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         color: #666;
     }
 
     /* comment textarea */
     #add-comment {
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         border: 1px solid #d1d5da;
         border-radius: 3px;
     }
@@ -743,7 +746,7 @@
 
     /* start - Bug list */
     table.bz_buglist {
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         border: 1px solid #e1e4e8;
         border-radius: 3px 3px 0 0;
         border-collapse: collapse;
@@ -756,7 +759,7 @@
     }
 
     table.bz_buglist tr:hover {
-        background-color: #f6f8fa !important;
+        background-color: var(--light-gray) !important;
     }
 
     table.bz_buglist tr.bz_row_odd,
@@ -783,7 +786,7 @@
     table.bz_buglist thead th.sorted_10,
     table.bz_buglist thead th.sorted_11,
     table.bz_buglist thead th.sorted_12 {
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
     }
 
     table.bz_buglist thead th a {
@@ -838,7 +841,7 @@
 
     ul.search_description {
         display: flex;
-        background-color: #f6f8fa;
+        background-color: var(--light-gray);
         border: 1px solid #e1e4e8;
         border-radius: 3px 3px 0 0;
         padding: 1em;
@@ -886,3 +889,6 @@
     }
     /* #end */
 
+#mode-container .button-row {
+    border-left-color: 5px solid transparent;
+}
